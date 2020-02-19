@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+.carousel-control span{ 
+	margin-top:160px; 
+	display:inline-block;
+}
+#first{
+	margin:0 auto;
+	width:946px;
+}
+#all{
+    width:944px;
+    height:120px;
+}
+#rolling{/*轮播图*/
+	float:left;
+	margin:-351px 0 0 300px;	
+	width:80%;	
+}
+#pu{/*五线谱*/
+    border:1px solid black; 
+    border-top: none;     
+    width:289px; 
+    height: 201px; 
+    flout:left;
+	margin:0;	
+}
+#hhh{
+    width:288px;
+    height:201px; 
+	margin:0 auto;
+    background: url(../images/pu.jpg); 
+    position:absolute;
+}
+#part2{
+    z-index:0;
+}
+#png1,#png2,#png3,#png4,#png5{
+    width:35px;
+    height:35px; 
+    z-index:10; 
+    position:absolute; 
+    
+}
+#png5{
+    top:10px;
+    left:232px;
+
+}
+#png3{
+    top:47px;
+    left:232px;
+    
+}
+#png1{
+    top:84px;
+    left:232px;
+
+}
+#png2{
+    top:121px;
+    left:232px;
+
+}
+#png4{
+    top:158px;
+    left:232px;
+
+}
+#main{/*钢琴键盘*/
+    border:1px solid black;
+    border-top:none;
+    width:944px;
+    height: 88px;
+	
+    /*margin:0 104px 0 0;*/
+	margin:0 auto;
+}
+
+#all{
+    margin:10px 2px;
+}
+
+.keyboard{/*电脑键盘*/
+    width:944px;
+    height:270px;
+    border:1px solid;
+    padding-top:25px;
+    /*margin:10px 104px 0 0;*/
+	margin:0 auto;
+	margin-top:11px;
+}
+
+.btnn {   
+    text-decoration: none;  
+    display: inline-block;
+    height:37.5px;
+    width:37.5px; 
+    box-shadow: 0.5px 1.5px 2px 0px #949494,-0.5px 1.5px 2px 0px #949494;
+    border:1px solid #929292;
+    border-top:1px solid #DADADA;
+    border-radius: 3px;
+    font-size: 13px;
+    text-align:center;
+    color: #737373;
+    padding-top:6px;
+    float:left;
+    margin-left:4px;
+    margin-top:5px;
+}
+
+.child:active{
+    background-color: #2f9ff1;     
+    box-shadow:inset 0px 17px 10px -15px #969696,
+               inset -12px 0px 12px -15px #969696,
+               inset 12px 0px 12px -15px #969696,
+               inset 0px -18px 12px -15px #EBEBEB,
+               0.5px 1.5px 2px 0px #7F7F7F,
+               -0.5px 1.5px 2px 0px #7F7F7F; 
+    border:1px solid #929292;
+}
+
+.btnn img{ width:23px; height:23px;}
+.btnn span{ display:inline-table; width:23px; height:23px;}
+.ban { background-color: #B3B3B3; padding-top:10px;}<!--被禁止的按钮-->
+.child{ background-color:#fff; }
+.left1{ margin-left:8px;}
+.left2{ margin-left:12px;}
+.top1{ margin-top:25px;  }
+.top{ margin-top:29px;  }
