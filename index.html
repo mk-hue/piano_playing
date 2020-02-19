@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/bootstrap.min.css">
+  <script src="jquery-3.3.1.min/jquery-3.3.1.min.js"></script>  
+  <link rel="stylesheet" href="css/k.css"> 
+  <script src="js/one.js"></script>
+  
+  <style>
+.big{ 
+	background:url(images/background1.png);
+	background-repeat:repeat; 
+	height:750px;
+    padding-top:155px;	
+}
+
+  </style>
+  
+</head>
+<body>
+<div class="big">
+
+<div id="first"><!--五线谱与滚动图的div-->
+ <!--五线谱-->
+ <div id="pu" >
+    <div id="hhh">
+        <canvas id="part2" width="288px" height="201px" >
+          <p>你的浏览器不支持Canvas</p>
+        </canvas>
+            <div id="png5" ></div>
+            <div id="png3" ></div>
+            <div id="png1" ></div>
+            <div id="png2" ></div>
+            <div id="png4" ></div>
+    </div>
+  </div>
+  
+	<!-- 滚动图 -->
+	<div class="container-fluid" >
+		<div class="row">
+			<div id="rolling">
+				<div id="banner">
+					<!-- banner -->
+					<div id="carousel-example-generic" class="carousel slide"  data-ride="carousel" data-interval="100000000000">					  	
+					  	<!-- Wrapper for slides -->
+					  	<div class="carousel-inner" role="listbox">
+					    	<div class="item active">
+					      		<img src="images/notation1.jpg" alt="...">
+					      		<div class="carousel-caption">
+					        		
+					      		</div>
+					    	</div>
+						    <div class="item">
+						      	<img src="images/notation2.jpg" alt="...">
+						      	<div class="carousel-caption">
+						        	
+						      	</div>
+						    </div>
+						    <div class="item">
+						      	<img src="images/notation3.jpg" alt="...">
+						      	<div class="carousel-caption">
+						        	
+						      	</div>
+						    </div>
+						    <div class="item">
+						      	<img src="images/notation4.jpg" alt="...">
+						      	<div class="carousel-caption">
+						        	
+						      	</div>
+						    </div>
+						    <div class="item">
+						      	<img src="images/notation5.jpg" alt="...">
+						      	<div class="carousel-caption">
+						        	
+						      	</div>
+					    	</div>
+					  	</div>
+
+					  	<!-- Controls -->
+					  	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">                        			   	
+                            <span ><</span>			    	
+					  	</a>
+					  	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					    	<span>></span>
+					  	</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+ </div>   
+
+  <div class="keyboard">
+  <!--第一行键盘-->
+  <div class="btnn ban left1">
+      <span>~</span>
+    </div>  
+    
+    <div class="btnn child" value="49">
+      <span><img src="images/.1.png" /></span>
+    </div>
+    <div class="btnn child" value="50">
+      <span><img src="images/.2.png" /></span>
+    </div>
+    <div class="btnn child" value="51">
+      <span><img src="images/.3.png" /></span>
+    </div>
+    <div class="btnn child" value="52">
+      <span><img src="images/.4.png" /></span>
+    </div>
+    <div class="btnn child" value="53">
+      <span><img src="images/.5.png" /></span>
+    </div>
+    <div class="btnn child" value="54">
+      <span><img src="images/.6.png" /></span>
+    </div>
+    <div class="btnn child" value="55">
+      <span><img src="images/.7.png" /></span>
+    </div>
+    <div class="btnn child" value="56">
+      <span><img src="images/..1.png" /></span>
+    </div>
+    <div class="btnn child" value="57">
+      <span><img src="images/..2.png" /></span>
+    </div>
+    <div class="btnn child" value="48">
+      <span><img src="images/..3.png" /></span>
+    </div>
+    <div class="btnn child" value="189">
+      <span><img src="images/..4.png" /></span>
+    </div>
+    <div class="btnn child" value="187">
+      <span><img src="images/..5.png" /></span>
+    </div>
+    <div class="btnn ban" style="width:75px;">
+      <span>Backspace</span>
+    </div>
+    
+    <div class="btnn child left2" value="45">
+      <span><img src="images/..4.png" /></span>
+    </div>
+    <div class="btnn child" value="36">
+      <span><img src="images/..5.png" /></span>
+    </div>
+    <div class="btnn child" value="33">
+      <span><img src="images/..6.png" /></span>
+    </div>
+    
+    <div class="btnn child left2" value="144">
+      <span><img src="images/.4.png" /></span>
+    </div>
+    <div class="btnn child" value="111">
+      <span><img src="images/.5.png" /></span>
+    </div>
+    <div class="btnn child" value="106">
+      <span><img src="images/.6.png" /></span>
+    </div>
+    <div class="btnn child" value="109">
+      <span><img src="images/.7.png" /></span>
+    </div>
+    
+  <!--第二行键盘-->
+  <div class="btnn ban left1" style="width:57px;">
+      <span>Tab</span>
+    </div>  
+    
+    <div class="btnn child" value="81">
+      <span><img src="images/1.png" /></span>
+    </div>
+    <div class="btnn child" value="87">
+      <span><img src="images/2.png" /></span>
+    </div>
+    <div class="btnn child" value="69">
+      <span><img src="images/3.png" /></span>
+    </div>
+    <div class="btnn child" value="82">
+      <span><img src="images/4.png" /></span>
+    </div>
+    <div class="btnn child" value="84">
+      <span><img src="images/5.png" /></span>
+    </div>
+    <div class="btnn child" value="89">
+      <span><img src="images/6.png" /></span>
+    </div>
+    <div class="btnn child" value="85">
+      <span><img src="images/7.png" /></span>
+    </div>
+    <div class="btnn child" value="73">
+      <span><img src="images/.1.png" /></span>
+    </div>
+    <div class="btnn child" value="79">
+      <span><img src="images/.2.png" /></span>
+    </div>
+    <div class="btnn child" value="80">
+      <span><img src="images/.3.png" /></span>
+    </div>
+    <div class="btnn child" value="219">
+      <span><img src="images/.4.png" /></span>
+    </div>
+    <div class="btnn child" value="221">
+      <span><img src="images/.5.png" /></span>
+    </div>
+    <div class="btnn child" value="220" style="width:56px;">
+      <span><img src="images/.6.png" /></span>
+    </div>
+    
+    <div class="btnn child left2" value="46">
+      <span><img src="images/..1.png" /></span>
+    </div>
+    <div class="btnn child" value="35">
+      <span><img src="images/..2.png" /></span>
+    </div>
+    <div class="btnn child" value="34">
+      <span><img src="images/..3.png" /></span>
+    </div>
+    
+    <div class="btnn child left2" value="103">
+      <span><img src="images/7.png" /></span>
+    </div>
+    <div class="btnn child" value="104">
+      <span><img src="images/.1.png" /></span>
+    </div>
+    <div class="btnn child" value="105">
+      <span><img src="images/.2.png" /></span>
+    </div>
+    <div class="btnn child" value="107" style="height:80px; float:right; margin-right:12px; padding-top:25px;">
+      <span><img src="images/.3.png" /></span>
+    </div>
+    
+  <!--第三行键盘-->
+  <div class="btnn ban left1" style="width:70px;">
+      <span>Caps</span>
+    </div>  
+    
+    <div class="btnn child" value="65">
+      <span><img src="images/1..png" /></span>
+    </div>
+    <div class="btnn child" value="83">
+      <span><img src="images/2..png" /></span>
+    </div>
+    <div class="btnn child" value="68">
+      <span><img src="images/3..png" /></span>
+    </div>
+    <div class="btnn child" value="70">
+      <span><img src="images/4..png" /></span>
+    </div>
+    <div class="btnn child" value="71">
+      <span><img src="images/5..png" /></span>
+    </div>
+    <div class="btnn child" value="72">
+      <span><img src="images/6..png" /></span>
+    </div>
+    <div class="btnn child" value="74">
+      <span><img src="images/7..png" /></span>
+    </div>
+    <div class="btnn child" value="75">
+      <span><img src="images/1.png" /></span>
+    </div>
+    <div class="btnn child" value="76">
+      <span><img src="images/2.png" /></span>
+    </div>
+    <div class="btnn child" value="186">
+      <span><img src="images/3.png" /></span>
+    </div>
+    <div class="btnn child" value="222">
+      <span><img src="images/4.png" /></span>
+    </div>
+    <div class="btnn ban" style="width:80px;">
+      <span>Enter</span>
+    </div>
+       
+    <div class="btnn child left2" value="100" style=" margin-left:149px;">
+      <span><img src="images/4.png" /></span>
+    </div>
+    <div class="btnn child" value="101">
+      <span><img src="images/5.png" /></span>
+    </div>
+    <div class="btnn child" value="102">
+      <span><img src="images/6.png" /></span>
+    </div>    
+    
+  <!--第四行键盘-->
+  <div class="btnn ban left1" style="width:91px;">
+      <span>Shift</span>
+    </div>  
+    
+    <div class="btnn child" value="90">
+      <span><img src="images/1...png" /></span>
+    </div>
+    <div class="btnn child" value="88">
+      <span><img src="images/2...png" /></span>
+    </div>
+    <div class="btnn child" value="67">
+      <span><img src="images/3...png" /></span>
+    </div>
+    <div class="btnn child" value="86">
+      <span><img src="images/4...png" /></span>
+    </div>
+    <div class="btnn child" value="66">
+      <span><img src="images/5...png" /></span>
+    </div>
+    <div class="btnn child" value="78">
+      <span><img src="images/6...png" /></span>
+    </div>
+    <div class="btnn child" value="77">
+      <span><img src="images/7...png" /></span>
+    </div>
+    <div class="btnn child" value="188">
+      <span><img src="images/1..png" /></span>
+    </div>
+    <div class="btnn child" value="190">
+      <span><img src="images/2..png" /></span>
+    </div>
+    <div class="btnn child" value="191">
+      <span><img src="images/3..png" /></span>
+    </div>
+    <div class="btnn ban" style="width:101px;">
+      <span>Shift</span>
+    </div>
+       
+    <div class="btnn child left2" value="38" style=" margin-left:54px;">
+      <span><img src="images/4..png" /></span>
+    </div>
+    
+    <div class="btnn child left2" value="97" style=" margin-left:57px;">
+      <span><img src="images/1.png" /></span>
+    </div>
+    <div class="btnn child" value="98">
+      <span><img src="images/2.png" /></span>
+    </div>
+    <div class="btnn child" value="99">
+      <span><img src="images/3.png" /></span>
+    </div>    
+     <div class="btnn child" value="13" style="height:80px; float:right; margin-right:12px; padding-top:25px;">
+      <span><img src="images/7..png" /></span>
+    </div>
+    
+    <!--第五行键盘-->
+    <div class="btnn ban left1" style="width:57px;">
+      <span>Ctrl</span>
+    </div>  
+    <div class="btnn ban" >
+      <span>win</span>
+    </div>
+    <div class="btnn ban">
+      <span>Alt</span>
+    </div>
+    <div class="btnn ban" style="width:301px;">
+      <span>Space</span>
+    </div>
+    <div class="btnn ban">
+      <span>Alt</span>
+    </div>
+    <div class="btnn ban">
+      <span>Win</span>
+    </div>
+    <div class="btnn ban">
+      <span>App</span>
+    </div>
+    <div class="btnn ban">
+      <span>ctrl</span>
+    </div>
+       
+     <div class="btnn child left2" value="37">
+      <span><img src="images/1..png" /></span>
+    </div>
+    <div class="btnn child" value="40">
+      <span><img src="images/2..png" /></span>
+    </div>
+    <div class="btnn child" value="39">
+      <span><img src="images/3..png" /></span>
+    </div>
+    
+    <div class="btnn child left2" value="96" style="width:80px; margin-left:15px;">
+      <span><img src="images/5..png" /></span>
+    </div>
+    <div class="btnn child" value="110">
+      <span><img src="images/6..png" /></span>
+    </div>    
+</div>
+
+	<div id="main" ><!--钢琴键盘-->
+		<canvas id="all" width="944px" height="120px" >
+			<p>你的浏览器不支持Canvas</p>
+		</canvas>
+	</div>
+
+
+</div>
+  <script src="js/two.js"></script>
+  <script src="bootstrap-3.3.7-dist/bootstrap.min.js"></script>
+</body>
+
+</html>
